@@ -34,9 +34,9 @@ dependencies {
 }
 
 version = '1.0.0'
-def siteUrl=''
-def gitUrl='https://github.com/flyfire/FlowLayoutDemo.git'
-group = 'com.solarexsoft.flowlayout'
+def siteUrl='https://github.com/flyfire/SimpleNetworkDemo'
+def gitUrl='https://github.com/flyfire/SimpleNetworkDemo.git'
+group = 'com.solarexsoft.solarexnetwork'
 install {
     repositories.mavenInstaller {
         // This generates POM.xml with proper parameters
@@ -44,7 +44,7 @@ install {
             project {
                 packaging 'aar'
                 // Add your description here
-                name 'flowlayout,流式布局'     //项目描述
+                name '网络请求框架'     //项目描述
                 url siteUrl
                 licenses {
                     license {
@@ -94,7 +94,7 @@ bintray {
     pkg {
         userOrg = "solarexsoft"
         repo = "maven"
-        name = "FlowLayout"
+        name = "SolarexNetwork"
         websiteUrl = siteUrl
         vcsUrl = gitUrl
         licenses = ["MIT"]
@@ -102,3 +102,4 @@ bintray {
     }
 
 
+}
